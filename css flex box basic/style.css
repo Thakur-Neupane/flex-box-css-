@@ -1,0 +1,57 @@
+body {
+  font-size: 40px;
+}
+
+.parent {
+  background: blue;
+  padding: 20px 10px 30px 10px;
+  height: 80vh;
+
+  /* flex  */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.parent > div {
+  background: grey;
+  width: 70px;
+  height: 70px;
+  margin: 10px;
+
+  /* flex  */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.item-1 {
+  order: 3;
+}
+.item-2 {
+  order: 2;
+}
+
+.item-3 {
+  flex-grow: 1;
+  order: 1;
+}
+
+.item-8 {
+  order: -1;
+}
+
+.item-9 {
+  order: -1;
+}
+
+.item-5 {
+  /* flex-grow: 3; */
+  align-self: flex-end;
+}
+
+.parent > div:nth-child(even) {
+  background: red;
+  height: 150px;
+  align-self: center;
+}
